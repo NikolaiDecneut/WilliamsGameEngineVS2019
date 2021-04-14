@@ -22,4 +22,4 @@ int main()
 	GAME.run();
 
 	return 0;
-}
+} 
