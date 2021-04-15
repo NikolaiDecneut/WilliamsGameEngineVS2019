@@ -22,5 +22,5 @@ ship::ship()
 
 void ship::draw()
 {
-	GAME.getRenderWindow(). draw(sprite);
-}
+	GAME.getRenderWindow().draw(sprite);
+};
