@@ -10,8 +10,12 @@ Laser::Laser(sf::Vector2f pos)
 
 void Laser::draw()
 {
-
+	GAME.getRenderWindow().draw(sprite_);
 }
 
 
+void Laser::update(sf::Time& elapsed) {
+	int msElapsed = elapsed.asMilliseconds();
+	sf::Vector2f pos = sprite_.getPosition();
+}
 
