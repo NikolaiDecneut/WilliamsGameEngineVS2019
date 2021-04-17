@@ -19,3 +19,17 @@ void Laser::update(sf::Time& elapsed) {
 	sf::Vector2f pos = sprite_.getPosition();
 }
 
+if (pos.x > GAME.getRenderWindow().getSize().x)
+{
+	makeDead();
+}
+else
+{
+	sprite_.stePosition(sf::Vector2f(pos.x + SPEED * msElapsed, pos.y));
+}
+
+
+
+
+
+
