@@ -4,7 +4,7 @@ class Laser : public GameObject
 {
 public : 
 
-	void laser(sf::Vector2f pos);
+	Laser(sf::Vector2f pos);
 
 	void draw();
 	void update(sf::Time& elapsed);

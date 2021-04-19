@@ -2,11 +2,11 @@
 
 #include "Engine/GameEngine.h"
 
-class ship : public GameObject
+class Ship : public GameObject
 {
 public:
 	
-	ship();
+	Ship();
 
 	
 	void draw();
@@ -16,4 +16,4 @@ private:
 	int fireTimer_ = 0;
 };
 
-typedef std::shared_ptr<ship> ShipPtr;
+typedef std::shared_ptr<Ship> ShipPtr;
