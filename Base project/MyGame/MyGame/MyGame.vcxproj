@@ -90,6 +90,7 @@
     <ClCompile Include="Laser.cpp" />
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="ship.cpp" />
+    <ClCompile Include="meteor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h" />
@@ -99,6 +100,7 @@
     <ClInclude Include="Engine\Scene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="laser.h" />
+    <ClInclude Include="Meteor.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="ship.h" />
   </ItemGroup>
@@ -110,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\laser.png" />
+    <Image Include="Resources\meteor.png" />
     <Image Include="Resources\ship.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
