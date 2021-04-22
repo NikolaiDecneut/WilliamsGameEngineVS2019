@@ -16,6 +16,23 @@ void Meteor::draw()
 
 void Meteor::update(sf::Time& Elapsed) {
 	int msElapsed = elapsed.asMilliseconds();
+	sf::Vector2f pos = sprite_.getPosition();
+
+	if (pos.x < sprite_.getGlobalBounds().width * -1)
+	{
+		makeDead();
+	}
+	else
+	{
+		sprite_.setPosition(sf::Vector2f(pos.x - SPEED * msElapsed, pos.y));
+
+	}
+
+
+
+
+
+
 
 }
 
