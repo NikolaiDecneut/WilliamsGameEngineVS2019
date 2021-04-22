@@ -20,6 +20,7 @@
     <ClCompile Include="meteor.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
+    <ClCompile Include="MeteorSpawner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -44,6 +45,7 @@
     <ClInclude Include="Meteor.h">
       <Filter>Engine</Filter>
     </ClInclude>
+    <ClInclude Include="MeteorSpawner.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
