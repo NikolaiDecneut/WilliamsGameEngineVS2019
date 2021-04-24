@@ -1,5 +1,18 @@
 #include "Meteor.h"
 
+sf::FloatRect Meteor::getCollisionRect()
+{
+	return sprite_.getGlobalBounds();
+}
+
+void Meteor::handleCollision(GameObject& otherGameObject)
+{
+	if (otherGameObject.hasTag("Laser"))
+	{
+		otherGameObject.makeDead();
+	}
+	makeDead();
+}
 const float SPEED = 0.25f;
 
 Meteor::Meteor(sf::Vector2f pos)
