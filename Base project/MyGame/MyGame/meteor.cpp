@@ -1,5 +1,6 @@
 #include "Meteor.h"
-
+#include "Explosion.h"
+#include "GameScene.h"
 sf::FloatRect Meteor::getCollisionRect()
 {
 	return sprite_.getGlobalBounds();
@@ -9,6 +10,10 @@ void Meteor::handleCollision(GameObject& otherGameObject)
 {
 	if (otherGameObject.hasTag("Laser"))
 	{
+		sf::Vector2f pos = sprite_.getPosition();
+		ExplosionPtr explosion = std::make_shared<Explosion>(pos);
+		GAME.getCurrentScene().addGameObject(explosion);
+		GameScene& scene = (GameScene&)GAME.getCurrentScene();
 		otherGameObject.makeDead();
 	}
 	makeDead();
@@ -34,14 +39,27 @@ void Meteor::update(sf::Time& Elapsed) {
 
 	if (pos.x < sprite_.getGlobalBounds().width * -1)
 	{
-		makeDead();
-	}
+ 		makeDead();
+   	}
 	else
 	{
 		sprite_.setPosition(sf::Vector2f(pos.x - SPEED * msElapsed, pos.y));
 
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
