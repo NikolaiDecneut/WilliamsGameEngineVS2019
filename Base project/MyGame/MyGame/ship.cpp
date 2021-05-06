@@ -5,7 +5,7 @@
 
 
 const float SPEED = 0.5f;
-const int FIRE_DELAY = 175;
+const int FIRE_DELAY = 200;
 //omitted code stuffs
 void Ship::update(sf::Time& elapsed) {
 	sf::Vector2f pos = sprite_.getPosition();
@@ -39,8 +39,8 @@ void Ship::update(sf::Time& elapsed) {
 		LaserPtr laser2 = std::make_shared<Laser>(sf::Vector2f(laserX, laserY2));
 		LaserPtr laser3 = std::make_shared<Laser>(sf::Vector2f(laserX, laserY3));
 		GAME.getCurrentScene().addGameObject(laser);
-		GAME.getCurrentScene().addGameObject(laser);
-		GAME.getCurrentScene().addGameObject(laser);
+		GAME.getCurrentScene().addGameObject(laser2);
+		GAME.getCurrentScene().addGameObject(laser3);
 	}
 
 }
