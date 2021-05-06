@@ -31,13 +31,15 @@ void Ship::update(sf::Time& elapsed) {
 
 		sf::FloatRect bounds = sprite_.getGlobalBounds();
 
+		
 		float laserX = x + bounds.width;
+		float laserX2 = x + bounds.width -50;
 		float laserY = y + (bounds.height / 2.0f);
 		float laserY2 = y + (bounds.height / 2.0f) - 50;
 		float laserY3 = y + (bounds.height / 2.0f) + 50;
 		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
-		LaserPtr laser2 = std::make_shared<Laser>(sf::Vector2f(laserX, laserY2));
-		LaserPtr laser3 = std::make_shared<Laser>(sf::Vector2f(laserX, laserY3));
+		LaserPtr laser2 = std::make_shared<Laser>(sf::Vector2f(laserX2, laserY2));
+		LaserPtr laser3 = std::make_shared<Laser>(sf::Vector2f(laserX2, laserY3));
 		GAME.getCurrentScene().addGameObject(laser);
 		GAME.getCurrentScene().addGameObject(laser2);
 		GAME.getCurrentScene().addGameObject(laser3);
