@@ -21,7 +21,8 @@ void Laser::draw()
 }
 
 
-void Laser::update(sf::Time& elapsed) {
+void Laser::update(sf::Time& elapsed) 
+{  
 	int msElapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = sprite_.getPosition();
 
