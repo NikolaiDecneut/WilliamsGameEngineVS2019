@@ -109,6 +109,9 @@
     <Media Include="Resources\boom.wav">
       <Filter>Resources</Filter>
     </Media>
+    <Media Include="Resources\laser.wav">
+      <Filter>Resources</Filter>
+    </Media>
   </ItemGroup>
   <ItemGroup>
     <Font Include="Resources\Courneuf-Regular.ttf">

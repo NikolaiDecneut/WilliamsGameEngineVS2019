@@ -132,6 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Media Include="Resources\boom.wav" />
+    <Media Include="Resources\laser.wav" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="Resources\Courneuf-Regular.ttf" />
