@@ -2,6 +2,7 @@
 #include "Explosion.h"
 #include "Score.h"
 #include "GameScene.h"
+#include "GameOverScene.h"
 sf::FloatRect Meteor::getCollisionRect()
 {
 	return sprite_.getGlobalBounds();
@@ -41,7 +42,9 @@ void Meteor::update(sf::Time& Elapsed) {
 
 	if (pos.x < sprite_.getGlobalBounds().width * -1)
 	{
-		
+		GameScene& scene = (GameScene&)GAME.getCurrentScene();
+		scene.decreaseLives();
+
  		makeDead();
    	}
 	else
