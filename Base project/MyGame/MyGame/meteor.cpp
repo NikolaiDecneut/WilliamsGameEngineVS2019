@@ -1,5 +1,6 @@
 #include "Meteor.h"
 #include "Explosion.h"
+#include "Score.h"
 #include "GameScene.h"
 sf::FloatRect Meteor::getCollisionRect()
 {
@@ -14,6 +15,7 @@ void Meteor::handleCollision(GameObject& otherGameObject)
 		ExplosionPtr explosion = std::make_shared<Explosion>(pos);
 		GAME.getCurrentScene().addGameObject(explosion);
 		GameScene& scene = (GameScene&)GAME.getCurrentScene();
+		scene.increaseScore();
 		otherGameObject.makeDead();
 	}
 	makeDead();
@@ -39,6 +41,7 @@ void Meteor::update(sf::Time& Elapsed) {
 
 	if (pos.x < sprite_.getGlobalBounds().width * -1)
 	{
+		
  		makeDead();
    	}
 	else
