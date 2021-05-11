@@ -18,6 +18,7 @@ void Meteor::handleCollision(GameObject& otherGameObject)
 		GameScene& scene = (GameScene&)GAME.getCurrentScene();
 		scene.increaseScore();
 		otherGameObject.makeDead();
+
 	}
 	makeDead();
 }
@@ -46,7 +47,6 @@ void Meteor::update(sf::Time& Elapsed) {
 		setCollisionCheckEnabled(true);
 		GameScene& scene = (GameScene&)GAME.getCurrentScene();
 		scene.decreaseLives ();
-
  		makeDead();
    	}
 	else

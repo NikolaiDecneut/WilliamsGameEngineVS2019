@@ -45,3 +45,6 @@ GameScene::GameScene()
 	LivesCountPtr livesCount = std::make_shared<LivesCount>(sf::Vector2f(150.0f, 10.0f));
 	addGameObject(livesCount);
 };
+//if class: decreaseLives(true) {
+
+//}
