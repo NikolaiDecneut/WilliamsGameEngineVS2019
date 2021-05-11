@@ -4,6 +4,7 @@
 #include "Explosion.h"
 #include "Score.h"
 #include "GameOverScene.h"
+#include "LivesCount.h"
 
 int GameScene::getLives()
 {
@@ -39,4 +40,6 @@ GameScene::GameScene()
 
 	ScorePtr score = std::make_shared<Score>(sf::Vector2f(10.0f, 10.0f));
 	addGameObject(score);
+	LivesCountPtr livesCount = std::make_shared<LivesCount>(sf::Vector2f(150.0f, 10.0f));
+	addGameObject(livesCount);
 };
