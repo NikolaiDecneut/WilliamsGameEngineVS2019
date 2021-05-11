@@ -29,6 +29,8 @@ Meteor::Meteor(sf::Vector2f pos)
 	sprite_.setPosition(pos);
 	setCollisionCheckEnabled(true);
 	assignTag("meteor");
+	GameScene& scene = (GameScene&)GAME.getCurrentScene();
+	scene.decreaseLives();
 }
 
 void Meteor::draw()
@@ -43,7 +45,7 @@ void Meteor::update(sf::Time& Elapsed) {
 	if (pos.x < sprite_.getGlobalBounds().width * -1)
 	{
 		GameScene& scene = (GameScene&)GAME.getCurrentScene();
-		scene.decreaseLives();
+		scene.decreaseLives ();
 
  		makeDead();
    	}
