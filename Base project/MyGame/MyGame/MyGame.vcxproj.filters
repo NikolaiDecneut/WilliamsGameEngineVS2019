@@ -128,12 +128,18 @@
     <Image Include="Resources\explosion09.png">
       <Filter>Resources</Filter>
     </Image>
+    <Image Include="..\..\..\..\..\..\Downloads\meteors.png">
+      <Filter>Resources</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Media Include="Resources\boom.wav">
       <Filter>Resources</Filter>
     </Media>
     <Media Include="Resources\laser.wav">
+      <Filter>Resources</Filter>
+    </Media>
+    <Media Include="..\..\..\..\..\..\Downloads\booms.mp3">
       <Filter>Resources</Filter>
     </Media>
   </ItemGroup>

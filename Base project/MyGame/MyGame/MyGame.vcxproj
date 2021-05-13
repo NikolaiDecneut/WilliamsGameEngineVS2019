@@ -123,6 +123,7 @@
     <ResourceCompile Include="MyGame.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\..\..\..\Downloads\meteors.png" />
     <Image Include="Resources\background.png" />
     <Image Include="Resources\explosion-spritesheet.png" />
     <Image Include="Resources\explosion01.png" />
@@ -139,6 +140,7 @@
     <Image Include="Resources\ship.png" />
   </ItemGroup>
   <ItemGroup>
+    <Media Include="..\..\..\..\..\..\Downloads\booms.mp3" />
     <Media Include="Resources\boom.wav" />
     <Media Include="Resources\laser.wav" />
   </ItemGroup>
