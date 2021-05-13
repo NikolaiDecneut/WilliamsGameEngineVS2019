@@ -140,8 +140,7 @@
     <Image Include="Resources\ship.png" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="..\..\..\..\..\..\Downloads\booms.mp3" />
-    <Media Include="Resources\boom.wav" />
+    <Media Include="..\..\..\..\..\..\OneDrive\Desktop\boomer.wav" />
     <Media Include="Resources\laser.wav" />
   </ItemGroup>
   <ItemGroup>

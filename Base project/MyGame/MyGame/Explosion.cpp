@@ -7,8 +7,8 @@ Explosion::Explosion(sf::Vector2f pos)
 	SetUpExplosionAnimation();
 	playAnimation("explosion", AnimationMode::OnceForwards);
 
-	booms_.setBuffer(GAME.getSoundBuffer("Resources/booms.mp3"));
-	booms_.play();
+	boomer_.setBuffer(GAME.getSoundBuffer("Resources/boomer.wav"));
+	boomer_.play();
 }
 
 void Explosion::SetUpExplosionAnimation()

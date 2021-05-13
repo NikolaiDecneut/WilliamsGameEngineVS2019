@@ -133,13 +133,10 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Media Include="Resources\boom.wav">
-      <Filter>Resources</Filter>
-    </Media>
     <Media Include="Resources\laser.wav">
       <Filter>Resources</Filter>
     </Media>
-    <Media Include="..\..\..\..\..\..\Downloads\booms.mp3">
+    <Media Include="..\..\..\..\..\..\OneDrive\Desktop\boomer.wav">
       <Filter>Resources</Filter>
     </Media>
   </ItemGroup>
