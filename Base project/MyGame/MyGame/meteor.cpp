@@ -22,7 +22,7 @@ void Meteor::handleCollision(GameObject& otherGameObject)
 	}
 	makeDead();
 }
-const float SPEED = 0.25f;
+const float SPEED = 0.3f;
 
 Meteor::Meteor(sf::Vector2f pos)
 {

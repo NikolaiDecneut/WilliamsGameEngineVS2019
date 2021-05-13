@@ -13,7 +13,7 @@ class GameScene : public Scene {
 
 private:
 	int score_ = 0;
-	int lives_ = 3;
+	int lives_ = 4;
 
 };
 
