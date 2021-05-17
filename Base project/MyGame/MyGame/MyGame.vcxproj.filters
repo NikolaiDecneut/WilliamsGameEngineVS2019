@@ -32,6 +32,9 @@
     <ClCompile Include="LivesCount.cpp">
       <Filter>Resources</Filter>
     </ClCompile>
+    <ClCompile Include="background.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -66,6 +69,9 @@
       <Filter>Resources</Filter>
     </ClInclude>
     <ClInclude Include="LivesCount.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="background.h">
       <Filter>Resources</Filter>
     </ClInclude>
   </ItemGroup>
