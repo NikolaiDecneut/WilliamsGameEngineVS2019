@@ -5,6 +5,7 @@
 #include "Score.h"
 #include "GameOverScene.h"
 #include "LivesCount.h"
+#include "background.h"
 
 int GameScene::getLives()
 {
@@ -33,6 +34,8 @@ void GameScene::increaseScore()
 }
 GameScene::GameScene()
 {
+	BackgroundPtr background = std::make_shared<Background>(sf::Vector2f(0.0, 0.0));
+	addGameObject(background);
 	ShipPtr ship = std::make_shared<Ship>();
 	addGameObject(ship);
 	MeteorSpawnerPtr meteorSpawner = std::make_shared<MeteorSpawner>();
