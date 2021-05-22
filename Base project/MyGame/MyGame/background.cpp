@@ -9,7 +9,7 @@
 //}\
 
 //
-// top two pics in discord are in this.cpp file
+// top two pics in discord are in this.cpp file 
 // the bottom one u put in gamescene.cpp file
 //
 const float SPEED = .1f;
